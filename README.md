@@ -2,7 +2,7 @@
 
 A curated, evidence-graded index of **Jev**, typed probabilistic interfaces, calibrated decision models, selective prediction, constrained generation, and cost-aware model routing.
 
-中文说明：这个仓库不只收集 Jev 链接，也整理其背后的学术谱系、可复现实验协议和机器可读资源表。厂商材料与同行评议证据分开标记，便于检索和复用。
+想快速了解 Jev，可以从这里开始。这里既收录官方资料、开源模型和实际应用，也整理相关论文、评测方法与复现实验；第一方说法和独立证据会分别标注，方便读者判断哪些结论已经站得住，哪些还需要验证。
 
 [中文 README](README.zh-CN.md)
 
