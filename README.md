@@ -1,8 +1,7 @@
 # Awesome Jev [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 A curated, evidence-graded index of **Jev**, typed probabilistic interfaces, calibrated decision models, selective prediction, constrained generation, and cost-aware model routing.
-
-想快速了解 Jev，可以从这里开始。这里既收录官方资料、开源模型和实际应用，也整理相关论文、评测方法与复现实验；第一方说法和独立证据会分别标注，方便读者判断哪些结论已经站得住，哪些还需要验证。
+收录Jev相关资源和论文
 
 [中文 README](README.zh-CN.md)
 
