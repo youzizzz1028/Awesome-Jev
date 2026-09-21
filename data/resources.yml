@@ -1,0 +1,249 @@
+schema_version: 1
+last_reviewed: 2026-09-21
+evidence_labels:
+  A: peer_reviewed
+  B: preprint
+  C: official_first_party
+  D: community
+resources:
+  - id: typesafe-jev-launch
+    title: Introducing System One Models and Jev
+    category: jev_official
+    evidence: C
+    year: 2026
+    url: https://typesafe.ai/blog/introducing-system-one-models-and-jev
+    accessed: 2026-09-21
+  - id: typesafe-docs
+    title: TypeSafe Documentation
+    category: jev_official
+    evidence: C
+    year: 2026
+    url: https://docs.typesafe.ai/introduction
+    accessed: 2026-09-21
+  - id: typesafe-system-one
+    title: System One
+    category: jev_official
+    evidence: C
+    year: 2026
+    url: https://docs.typesafe.ai/concepts/system-one
+    accessed: 2026-09-21
+  - id: typesafe-confidence
+    title: Confidence
+    category: jev_official
+    evidence: C
+    year: 2026
+    url: https://docs.typesafe.ai/confidence
+    accessed: 2026-09-21
+  - id: typesafe-evals
+    title: Workflow Evaluations
+    category: jev_official
+    evidence: C
+    year: 2026
+    url: https://evals.typesafe.ai/
+    accessed: 2026-09-21
+  - id: typesafe-adapter
+    title: System One Adapter for Python
+    category: code
+    evidence: C
+    year: 2026
+    url: https://github.com/typesafe-ai/system-one-adapter-python
+    accessed: 2026-09-21
+  - id: guo-2017-calibration
+    title: On Calibration of Modern Neural Networks
+    category: calibration
+    evidence: A
+    year: 2017
+    url: https://proceedings.mlr.press/v70/guo17a.html
+  - id: silva-filho-2023-survey
+    title: "Classifier Calibration: A Survey"
+    category: calibration
+    evidence: A
+    year: 2023
+    url: https://doi.org/10.1007/s10994-023-06336-7
+  - id: desai-2020-transformers
+    title: Calibration of Pre-trained Transformers
+    category: calibration
+    evidence: A
+    year: 2020
+    url: https://aclanthology.org/2020.emnlp-main.21/
+  - id: jiang-2021-know
+    title: How Can We Know When Language Models Know?
+    category: calibration
+    evidence: A
+    year: 2021
+    url: https://doi.org/10.1162/tacl_a_00407
+  - id: kuhn-2024-semantic-entropy
+    title: Detecting Hallucinations in Large Language Models Using Semantic Entropy
+    category: uncertainty
+    evidence: A
+    year: 2024
+    url: https://doi.org/10.1038/s41586-024-07421-0
+  - id: ovadia-2019-shift
+    title: Can You Trust Your Model's Uncertainty?
+    category: uncertainty
+    evidence: A
+    year: 2019
+    url: https://proceedings.neurips.cc/paper/2019/hash/8558cb408c1d76621371888657d2eb1d-Abstract.html
+  - id: geifman-2019-selectivenet
+    title: SelectiveNet
+    category: selective_prediction
+    evidence: A
+    year: 2019
+    url: https://proceedings.mlr.press/v97/geifman19a.html
+  - id: gu-2023-selective-nlp
+    title: On the Evaluation of Neural Selective Prediction Methods for NLP
+    category: selective_prediction
+    evidence: A
+    year: 2023
+    url: https://aclanthology.org/2023.acl-long.437/
+  - id: madras-2018-defer
+    title: Predict Responsibly
+    category: learning_to_defer
+    evidence: A
+    year: 2018
+    url: https://proceedings.neurips.cc/paper/2018/hash/09d37c08f7b129e96277388757530c72-Abstract.html
+  - id: narasimhan-2022-defer
+    title: Post-hoc Estimators for Learning to Defer to an Expert
+    category: learning_to_defer
+    evidence: A
+    year: 2022
+    url: https://proceedings.neurips.cc/paper_files/paper/2022/hash/bc8f76d9caadd48f77025b1c889d2e2d-Abstract.html
+  - id: quach-2024-conformal
+    title: Conformal Language Modeling
+    category: conformal_prediction
+    evidence: A
+    year: 2024
+    url: https://openreview.net/forum?id=pzUhfQ74c5
+  - id: belanger-2016-spen
+    title: Structured Prediction Energy Networks
+    category: structured_prediction
+    evidence: A
+    year: 2016
+    url: https://proceedings.mlr.press/v48/belanger16.html
+  - id: scholak-2021-picard
+    title: PICARD
+    category: constrained_decoding
+    evidence: A
+    year: 2021
+    url: https://aclanthology.org/2021.emnlp-main.779/
+  - id: geng-2023-grammar
+    title: Grammar-Constrained Decoding for Structured NLP Tasks
+    category: constrained_decoding
+    evidence: A
+    year: 2023
+    url: https://aclanthology.org/2023.emnlp-main.674/
+  - id: geng-2025-jsonschema
+    title: Generating Structured Outputs from Language Models
+    category: constrained_decoding
+    evidence: B
+    year: 2025
+    url: https://arxiv.org/abs/2501.10868
+  - id: wilder-2019-decision
+    title: Melding the Data-Decisions Pipeline
+    category: decision_focused_learning
+    evidence: A
+    year: 2019
+    url: https://doi.org/10.1609/aaai.v33i01.33011658
+  - id: chen-2023-frugalgpt
+    title: FrugalGPT
+    category: routing
+    evidence: B
+    year: 2023
+    url: https://arxiv.org/abs/2305.05176
+  - id: ong-2024-routellm
+    title: RouteLLM
+    category: routing
+    evidence: B
+    year: 2024
+    url: https://arxiv.org/abs/2406.18665
+  - id: kassem-2026-router-robustness
+    title: How Robust Are Router-LLMs?
+    category: routing
+    evidence: A
+    year: 2026
+    url: https://aclanthology.org/2026.eacl-long.351/
+  - id: li-2026-routerbench
+    title: LLMRouterBench
+    category: routing
+    evidence: A
+    year: 2026
+    url: https://aclanthology.org/2026.findings-acl.1881/
+  - id: yaldiz-2026-calibration-rl
+    title: Balancing Classification and Calibration Performance in Decision-Making LLMs
+    category: calibration_aware_training
+    evidence: A
+    year: 2026
+    url: https://aclanthology.org/2026.findings-acl.610/
+  - id: typesafe-home
+    title: Machine-Native Intelligence
+    category: jev_official
+    evidence: C
+    year: 2026
+    url: https://typesafe.ai/
+    accessed: 2026-09-21
+  - id: jagannatha-2020-structured-calibration
+    title: Calibrating Structured Output Predictors for Natural Language Processing
+    category: structured_prediction
+    evidence: A
+    year: 2020
+    url: https://aclanthology.org/2020.acl-main.188/
+  - id: pauk-2026-prompt-structured-prediction
+    title: Mapping the Course for Prompt-Based Structured Prediction
+    category: structured_prediction
+    evidence: A
+    year: 2026
+    url: https://aclanthology.org/2026.eacl-long.160/
+  - id: lin-2022-verbalized-uncertainty
+    title: Teaching Models to Express Their Uncertainty in Words
+    category: uncertainty
+    evidence: B
+    year: 2022
+    url: https://arxiv.org/abs/2205.14334
+  - id: kadavath-2022-know
+    title: Language Models Mostly Know What They Know
+    category: uncertainty
+    evidence: B
+    year: 2022
+    url: https://arxiv.org/abs/2207.05221
+  - id: liu-2025-uq-survey
+    title: "Uncertainty Quantification and Confidence Calibration in Large Language Models: A Survey"
+    category: uncertainty
+    evidence: B
+    year: 2025
+    url: https://arxiv.org/abs/2503.15850
+  - id: varshney-2022-selective-nlp
+    title: Towards Improving Selective Prediction Ability of NLP Systems
+    category: selective_prediction
+    evidence: A
+    year: 2022
+    url: https://aclanthology.org/2022.repl4nlp-1.23/
+  - id: mandi-2023-decision-focused-survey
+    title: "Decision-Focused Learning: Foundations, State of the Art, Benchmark and Future Opportunities"
+    category: decision_focused_learning
+    evidence: B
+    year: 2023
+    url: https://arxiv.org/abs/2307.13565
+  - id: huang-2025-routereval
+    title: RouterEval
+    category: routing
+    evidence: A
+    year: 2025
+    url: https://aclanthology.org/2025.findings-emnlp.208/
+  - id: zheng-2026-skillrouter
+    title: SkillRouter
+    category: routing
+    evidence: B
+    year: 2026
+    url: https://arxiv.org/abs/2603.22455
+  - id: chen-2026-router-within
+    title: "The Router Within: Eliciting Native Skill Routing from a Frozen LLM"
+    category: routing
+    evidence: B
+    year: 2026
+    url: https://arxiv.org/abs/2609.15982
+  - id: yang-2024-rlcd
+    title: "RLCD: Reinforcement Learning from Contrast Distillation for Language Model Alignment"
+    category: acronym_disambiguation
+    evidence: A
+    year: 2024
+    url: https://openreview.net/forum?id=v3XXtxWKi6

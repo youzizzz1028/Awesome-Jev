@@ -1,0 +1,36 @@
+name: Suggest a resource
+description: Propose a paper, official document, implementation, or benchmark.
+title: "[Resource]: "
+labels: [resource]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Stable URL
+    validations:
+      required: true
+  - type: dropdown
+    id: evidence
+    attributes:
+      label: Evidence label
+      options:
+        - A — peer reviewed
+        - B — preprint
+        - C — official or first party
+        - D — community resource
+    validations:
+      required: true
+  - type: textarea
+    id: relevance
+    attributes:
+      label: Relevance
+      description: Explain the connection to Jev or machine-native decision models in one or two sentences.
+    validations:
+      required: true
+  - type: checkboxes
+    id: disclosure
+    attributes:
+      label: Disclosure
+      options:
+        - label: I have disclosed whether I am an author or maintainer of this resource.
+          required: true

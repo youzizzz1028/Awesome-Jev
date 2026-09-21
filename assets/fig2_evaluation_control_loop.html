@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Evaluation of machine-native decisions</title>
+<style>html,body{margin:0;background:#fff}body{width:1800px;height:1120px;overflow:hidden}svg{display:block;width:1800px;height:1120px;font-family:Arial,Helvetica,sans-serif}.t{fill:#23282d}.m{fill:#687078}.small{font-size:16px}.body{font-size:18px}.head{font-size:23px;font-weight:700}.nodehead{font-size:20px;font-weight:700}.title{font-size:30px;font-weight:700}.panel{font-size:28px;font-weight:700}.rule{stroke:#c9ced3;stroke-width:1.5}.axis{stroke:#555e65;stroke-width:1.6}.grid{stroke:#e2e5e7;stroke-width:1}.arrow{stroke:#6f777d;stroke-width:2;fill:none;marker-end:url(#arrow)}.dash{stroke-dasharray:7 6}.legend{font-size:15px}.formula{font-size:19px;font-family:Georgia,Times,serif}.ico{opacity:.82}.bus{stroke:#b27a76;stroke-width:1.5;fill:none}</style></head>
+<body><svg viewBox="0 0 1800 1120" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#6f777d"/></marker></defs>
+<rect width="1800" height="1120" fill="#fff"/>
+
+<!-- panel a -->
+<text x="42" y="50" class="t panel">a</text><text x="84" y="50" class="t title">Decision and feedback loop</text>
+<rect x="42" y="80" width="1110" height="424" fill="#fbfbfa" stroke="#c9ced3"/>
+<text x="70" y="112" class="m small">Inference path</text>
+<rect x="70" y="145" width="180" height="92" rx="5" fill="#eef1f3" stroke="#7f8990" stroke-width="1.5"/><image href="icons/database.svg" x="88" y="165" width="22" height="22" class="ico"/><text x="171" y="181" text-anchor="middle" class="t nodehead">State</text><text x="160" y="211" text-anchor="middle" class="m small">x · context · constraints</text>
+<path d="M260 191H330" class="arrow"/>
+<rect x="342" y="145" width="205" height="92" rx="5" fill="#e8eef7" stroke="#5b7db1" stroke-width="1.5"/><image href="icons/cpu.svg" x="355" y="165" width="22" height="22" class="ico"/><text x="461" y="181" text-anchor="middle" class="t nodehead">Decision model</text><text x="444" y="211" text-anchor="middle" class="m small">f<tspan baseline-shift="sub" font-size="12">θ</tspan>(x,S)</text>
+<path d="M557 191H627" class="arrow"/>
+<rect x="639" y="145" width="205" height="92" rx="5" fill="#eeeaf5" stroke="#806fa8" stroke-width="1.5"/><image href="icons/list-checks.svg" x="652" y="165" width="22" height="22" class="ico"/><text x="757" y="181" text-anchor="middle" class="t nodehead">Typed output</text><text x="741" y="211" text-anchor="middle" class="m small">p(y|x,S) · metadata</text>
+<path d="M854 191H924" class="arrow"/>
+<rect x="936" y="145" width="188" height="92" rx="5" fill="#f5e8e6" stroke="#c66d68" stroke-width="1.5"/><image href="icons/route.svg" x="948" y="165" width="22" height="22" class="ico"/><text x="1046" y="181" text-anchor="middle" class="t nodehead">Control policy</text><text x="1030" y="211" text-anchor="middle" class="m small">π(a|p,C)</text>
+
+<rect x="70" y="278" width="1054" height="104" rx="5" fill="#fcf8f7" stroke="#d3a09c"/>
+<image href="icons/workflow.svg" x="91" y="293" width="23" height="23" class="ico"/><text x="124" y="311" class="t body" font-weight="700">Policy actions</text>
+<g><rect x="91" y="329" width="142" height="38" rx="4" fill="#fff" stroke="#d3a09c"/><text x="162" y="354" text-anchor="middle" class="t small">Execute</text>
+<rect x="251" y="329" width="142" height="38" rx="4" fill="#fff" stroke="#d3a09c"/><text x="322" y="354" text-anchor="middle" class="t small">Verify</text>
+<rect x="411" y="329" width="142" height="38" rx="4" fill="#fff" stroke="#d3a09c"/><text x="482" y="354" text-anchor="middle" class="t small">Retrieve</text>
+<rect x="571" y="329" width="142" height="38" rx="4" fill="#fff" stroke="#d3a09c"/><text x="642" y="354" text-anchor="middle" class="t small">Route</text>
+<rect x="731" y="329" width="142" height="38" rx="4" fill="#fff" stroke="#d3a09c"/><text x="802" y="354" text-anchor="middle" class="t small">Abstain</text>
+<rect x="891" y="329" width="142" height="38" rx="4" fill="#fff" stroke="#d3a09c"/><text x="962" y="354" text-anchor="middle" class="t small">Escalate</text></g>
+<path d="M1030 247V269" class="arrow"/>
+<rect x="70" y="417" width="480" height="58" rx="4" fill="#e5f1ef" stroke="#4d9b8e"/><image href="icons/chart-no-axes-combined.svg" x="88" y="433" width="23" height="23" class="ico"/><text x="122" y="441" class="t body" font-weight="700">Observed outcomes</text><text x="122" y="463" class="m small">correctness · loss · cost · latency · workload</text>
+<rect x="650" y="417" width="474" height="58" rx="4" fill="#f5eedc" stroke="#c89445"/><image href="icons/refresh-cw.svg" x="668" y="433" width="23" height="23" class="ico"/><text x="702" y="441" class="t body" font-weight="700">Monitor and recalibrate</text><text x="702" y="463" class="m small">time · domain · subgroup · API/model version</text>
+<path d="M597 382V398H310V408" class="arrow"/><path d="M558 446H638" class="arrow"/>
+<path d="M887 483V490H58V253H444V242" class="arrow dash"/>
+
+<!-- panel b -->
+<text x="1190" y="50" class="t panel">b</text><text x="1232" y="50" class="t title">Evaluation layers</text>
+<rect x="1190" y="80" width="568" height="424" fill="#fff" stroke="#c9ced3"/>
+<rect x="1218" y="111" width="512" height="76" fill="#e8eef7" stroke="#9fb2d0"/><image href="icons/braces.svg" x="1240" y="127" width="25" height="25" class="ico"/><text x="1278" y="141" class="t head">1  Structural validity</text><text x="1278" y="168" class="m small">parse rate · schema coverage · consistency</text>
+<rect x="1218" y="199" width="512" height="76" fill="#eeeaf5" stroke="#b4a9cc"/><image href="icons/circle-check.svg" x="1240" y="215" width="25" height="25" class="ico"/><text x="1278" y="229" class="t head">2  Semantic correctness</text><text x="1278" y="256" class="m small">accuracy · F1 · task loss · factual validity</text>
+<rect x="1218" y="287" width="512" height="76" fill="#f5eedc" stroke="#d8bb81"/><image href="icons/gauge.svg" x="1240" y="303" width="25" height="25" class="ico"/><text x="1278" y="317" class="t head">3  Probabilistic reliability</text><text x="1278" y="344" class="m small">NLL · Brier · ECE · reliability curve</text>
+<rect x="1218" y="375" width="512" height="100" fill="#f5e8e6" stroke="#d8a19d"/><image href="icons/scale.svg" x="1240" y="391" width="25" height="25" class="ico"/><text x="1278" y="405" class="t head">4  Decision utility</text><text x="1278" y="432" class="m small">risk–coverage · downstream loss · workload</text><text x="1278" y="457" class="m small">quality–cost–latency Pareto frontier</text>
+
+<!-- bottom title rule -->
+<line x1="42" y1="545" x2="1758" y2="545" class="rule"/>
+<text x="42" y="584" class="t panel">c</text><text x="84" y="584" class="t head">Calibration</text>
+<text x="620" y="584" class="t panel">d</text><text x="662" y="584" class="t head">Selective prediction</text>
+<text x="1198" y="584" class="t panel">e</text><text x="1240" y="584" class="t head">System trade-offs</text>
+
+<!-- panel c reliability plot -->
+<rect x="42" y="610" width="520" height="442" fill="#fff" stroke="#c9ced3"/>
+<text x="68" y="641" class="m small">Reliability diagram (schematic)</text>
+<line x1="105" y1="964" x2="500" y2="964" class="axis"/><line x1="105" y1="964" x2="105" y2="690" class="axis"/>
+<line x1="105" y1="827" x2="500" y2="827" class="grid"/><line x1="302" y1="964" x2="302" y2="690" class="grid"/>
+<path d="M105 964L500 690" stroke="#81878c" stroke-width="2" fill="none" class="dash"/>
+<path d="M105 952C185 935 245 895 302 855C370 808 432 748 500 718" stroke="#5b7db1" stroke-width="4" fill="none"/>
+<path d="M105 954C190 950 254 924 316 879C385 829 444 779 500 751" stroke="#c66d68" stroke-width="4" fill="none"/>
+<text x="495" y="681" text-anchor="end" class="m small">ideal</text><text x="435" y="731" class="t small" fill="#5b7db1">calibrated</text><text x="405" y="835" class="t small" fill="#c66d68">overconfident</text>
+<text x="303" y="1002" text-anchor="middle" class="t small">predicted confidence</text><text x="67" y="827" text-anchor="middle" transform="rotate(-90 67 827)" class="t small">empirical accuracy</text>
+<text x="303" y="1034" text-anchor="middle" class="t formula">P(Y = Ŷ | c(X) = q) = q</text>
+
+<!-- panel d risk coverage -->
+<rect x="620" y="610" width="520" height="442" fill="#fff" stroke="#c9ced3"/>
+<text x="646" y="641" class="m small">Risk–coverage curve (schematic; lower is better)</text>
+<line x1="683" y1="964" x2="1078" y2="964" class="axis"/><line x1="683" y1="964" x2="683" y2="690" class="axis"/>
+<line x1="683" y1="827" x2="1078" y2="827" class="grid"/><line x1="880" y1="964" x2="880" y2="690" class="grid"/>
+<path d="M683 950C790 946 868 930 924 890C990 844 1038 776 1078 704" stroke="#4d9b8e" stroke-width="4" fill="none"/>
+<path d="M683 940C770 916 847 881 914 840C975 803 1030 754 1078 720" stroke="#c89445" stroke-width="4" fill="none"/>
+<line x1="683" y1="810" x2="1078" y2="810" stroke="#c66d68" stroke-width="2" class="dash"/><text x="1073" y="800" text-anchor="end" class="m small">risk budget r<tspan baseline-shift="sub" font-size="11">0</tspan></text>
+<circle cx="993" cy="810" r="6" fill="#4d9b8e"/><path d="M993 810V964" stroke="#4d9b8e" stroke-width="1.5" class="dash"/><text x="993" y="989" text-anchor="middle" class="t small">maximum autonomous coverage</text>
+<text x="881" y="1034" text-anchor="middle" class="t formula">R<tspan baseline-shift="sub" font-size="13">sel</tspan>(λ) = Σ ℓ<tspan baseline-shift="sub" font-size="13">i</tspan>g<tspan baseline-shift="sub" font-size="13">λ</tspan>(x<tspan baseline-shift="sub" font-size="13">i</tspan>) / Σ g<tspan baseline-shift="sub" font-size="13">λ</tspan>(x<tspan baseline-shift="sub" font-size="13">i</tspan>)</text>
+<text x="881" y="1002" text-anchor="middle" class="t small">coverage</text><text x="646" y="827" text-anchor="middle" transform="rotate(-90 646 827)" class="t small">selective risk</text>
+
+<!-- panel e Pareto -->
+<rect x="1198" y="610" width="560" height="442" fill="#fff" stroke="#c9ced3"/>
+<text x="1224" y="641" class="m small">Quality–cost–latency comparison (schematic)</text>
+<line x1="1264" y1="964" x2="1696" y2="964" class="axis"/><line x1="1264" y1="964" x2="1264" y2="690" class="axis"/>
+<line x1="1264" y1="827" x2="1696" y2="827" class="grid"/><line x1="1480" y1="964" x2="1480" y2="690" class="grid"/>
+<path d="M1310 906C1400 826 1485 773 1580 735C1620 719 1660 705 1695 698" stroke="#806fa8" stroke-width="3" fill="none" class="dash"/>
+<g fill="#aeb5bb"><circle cx="1342" cy="875" r="12"/><circle cx="1400" cy="860" r="16"/><circle cx="1460" cy="808" r="13"/><circle cx="1515" cy="835" r="18"/><circle cx="1587" cy="752" r="15"/><circle cx="1650" cy="730" r="20"/></g>
+<circle cx="1372" cy="815" r="17" fill="#5b7db1"/><circle cx="1500" cy="764" r="17" fill="#4d9b8e"/><circle cx="1618" cy="710" r="17" fill="#c66d68"/>
+<text x="1372" y="784" text-anchor="middle" class="t small">A</text><text x="1500" y="733" text-anchor="middle" class="t small">B</text><text x="1618" y="679" text-anchor="middle" class="t small">C</text>
+<text x="1480" y="1002" text-anchor="middle" class="t small">cost / latency budget</text><text x="1226" y="827" text-anchor="middle" transform="rotate(-90 1226 827)" class="t small">decision quality</text>
+<circle cx="1268" cy="1027" r="7" fill="#aeb5bb"/><text x="1283" y="1033" class="m legend">dominated configuration</text><circle cx="1478" cy="1027" r="7" fill="#4d9b8e"/><text x="1493" y="1033" class="m legend">Pareto-efficient configuration</text>
+
+<line x1="42" y1="1082" x2="1758" y2="1082" class="rule"/>
+<text x="42" y="1106" class="m small">Curves and points in c–e are conceptual illustrations, not empirical Jev measurements. Report target-domain estimates with confidence intervals and frozen model versions.</text>
+</svg></body></html>

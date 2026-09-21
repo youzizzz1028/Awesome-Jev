@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If this resource index or survey supports your work, please cite this repository."
+title: "Awesome Jev: Typed, Calibrated, and Machine-Native Decision Models"
+type: dataset
+authors:
+  - name: "Awesome Jev contributors"
+version: 0.1.0
+date-released: 2026-09-21
+license: Apache-2.0
+abstract: "An evidence-graded resource index and survey for Jev and machine-native decision models."

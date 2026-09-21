@@ -1,0 +1,156 @@
+schema_version: 1
+last_verified: 2026-09-21
+status_labels:
+  official: maintained_by_typesafe
+  community: independently_maintained
+repositories:
+  - name: typesafe-sdk-js
+    owner: typesafe-ai
+    category: official_sdk
+    status: official
+    url: https://github.com/typesafe-ai/typesafe-sdk-js
+  - name: typesafe-sdk-python
+    owner: typesafe-ai
+    category: official_sdk
+    status: official
+    url: https://github.com/typesafe-ai/typesafe-sdk-python
+  - name: system-one-adapter-python
+    owner: typesafe-ai
+    category: baseline_adapter
+    status: official
+    url: https://github.com/typesafe-ai/system-one-adapter-python
+  - name: skills
+    owner: typesafe-ai
+    category: agent_skill
+    status: official
+    url: https://github.com/typesafe-ai/skills
+  - name: SemIf
+    owner: TheoLeeCJ
+    category: open_replica
+    status: community
+    url: https://github.com/TheoLeeCJ/SemIf
+  - name: jevlike
+    owner: vinnylarouge
+    category: open_replica
+    status: community
+    url: https://github.com/vinnylarouge/jevlike
+  - name: openjev
+    owner: razorback16
+    category: open_replica
+    status: community
+    url: https://github.com/razorback16/openjev
+  - name: decider
+    owner: Mapika
+    category: open_replica
+    status: community
+    url: https://github.com/Mapika/decider
+  - name: reflex
+    owner: kshetrajna12
+    category: open_replica
+    status: community
+    url: https://github.com/kshetrajna12/reflex
+  - name: von
+    owner: wfzyx
+    category: open_replica
+    status: community
+    url: https://github.com/wfzyx/von
+  - name: eve
+    owner: vercel
+    category: agent_framework
+    status: community
+    url: https://github.com/vercel/eve
+  - name: pg-jev
+    owner: realZachi
+    category: database_integration
+    status: community
+    url: https://github.com/realZachi/pg-jev
+  - name: HA-Jev
+    owner: AboveColin
+    category: home_automation
+    status: community
+    url: https://github.com/AboveColin/HA-Jev
+  - name: llama-index-jev
+    owner: WiktorB2004
+    category: rag_integration
+    status: community
+    url: https://github.com/WiktorB2004/llama-index-jev
+  - name: n8n-nodes-jev
+    owner: vibe-with-me-tools
+    category: workflow_integration
+    status: community
+    url: https://github.com/vibe-with-me-tools/n8n-nodes-jev
+  - name: jevmail
+    owner: fazlerocks
+    category: application_email
+    status: community
+    url: https://github.com/fazlerocks/jevmail
+  - name: agent-chaperone
+    owner: agent-chaperone
+    category: agent_safety
+    status: community
+    url: https://github.com/agent-chaperone/agent-chaperone
+  - name: jev-engineering
+    owner: eugeniughelbur
+    category: coding_agent
+    status: community
+    url: https://github.com/eugeniughelbur/jev-engineering
+  - name: jev-align
+    owner: sutro-sh
+    category: active_learning
+    status: community
+    url: https://github.com/sutro-sh/jev-align
+  - name: reranker
+    owner: hev
+    category: search_reranking
+    status: community
+    url: https://github.com/hev/reranker
+  - name: jev-usecases
+    owner: kenhuangus
+    category: use_case_harness
+    status: community
+    url: https://github.com/kenhuangus/jev-usecases
+  - name: typesafe-jev-examples
+    owner: rajivkuriakose
+    category: examples
+    status: community
+    url: https://github.com/rajivkuriakose/typesafe-jev-examples
+  - name: jev-measured
+    owner: WallerChen
+    category: independent_measurement
+    status: community
+    url: https://github.com/WallerChen/jev-measured
+  - name: typesafe-ai-playground
+    owner: markjaquith
+    category: playground
+    status: community
+    url: https://github.com/markjaquith/typesafe-ai-playground
+  - name: Jev
+    owner: cobusgreyling
+    category: showcase
+    status: community
+    url: https://github.com/cobusgreyling/Jev
+  - name: jev-ai
+    owner: codaaiteam
+    category: quickstart
+    status: community
+    url: https://github.com/codaaiteam/jev-ai
+  - name: awesome-jev
+    owner: hellogumbo
+    category: ecosystem_directory
+    status: community
+    url: https://github.com/hellogumbo/awesome-jev
+  - name: awesome-jev-typesafe
+    owner: valentynkit
+    category: ecosystem_directory
+    status: community
+    url: https://github.com/valentynkit/awesome-jev-typesafe
+  - name: awesome-jev-projects
+    owner: logicrw
+    category: ecosystem_directory
+    status: community
+    url: https://github.com/logicrw/awesome-jev-projects
+  - name: awesome-jev
+    owner: cobanov
+    category: ecosystem_directory
+    status: community
+    url: https://github.com/cobanov/awesome-jev
