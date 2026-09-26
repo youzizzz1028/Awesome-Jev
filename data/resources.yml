@@ -6,6 +6,12 @@ evidence_labels:
   C: official_first_party
   D: community
 resources:
+  - id: ling-2026-jev-in-the-wild
+    title: "Jev in the Wild: A Data-Driven Analysis of the Jev Model's Functionality, Applications and Ecosystem"
+    category: jev_application_ecosystem
+    evidence: B
+    year: 2026
+    url: https://arxiv.org/abs/2609.30216
   - id: typesafe-jev-launch
     title: Introducing System One Models and Jev
     category: jev_official

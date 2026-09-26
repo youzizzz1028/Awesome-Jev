@@ -124,6 +124,7 @@ The index is organized by the role a paper plays in a machine-native decision pi
 
 | Category | Papers | What it covers |
 |---|---:|---|
+| [Jev application ecosystem](#jev-application-ecosystem) | 1 | Data-driven survey of Jev projects and decision uses |
 | [Foundations and structured prediction](#foundations-and-structured-prediction) | 3 | Finite and globally constrained decision spaces |
 | [Typed output and constrained decoding](#typed-output-and-constrained-decoding) | 3 | Grammar, schema, and parse guarantees |
 | [Calibration and uncertainty](#calibration-and-uncertainty) | 9 | Probability quality, confidence, and distribution shift |
@@ -131,6 +132,10 @@ The index is organized by the role a paper plays in a machine-native decision pi
 | [Decision-focused learning](#decision-focused-learning) | 2 | Optimizing downstream action utility |
 | [Routing, cascades, and dynamic inference](#routing-cascades-and-dynamic-inference) | 7 | Quality--cost allocation across models and skills |
 | [Calibration-aware decision training](#calibration-aware-decision-training) | 2 | Joint task performance and calibrated confidence |
+
+### Jev application ecosystem
+
+- **[B · 2026 · arXiv] [Jev in the Wild: A Data-Driven Analysis of the Jev Model's Functionality, Applications and Ecosystem](https://arxiv.org/abs/2609.30216)** — first data-driven survey and analysis of Jev's application ecosystem across 2,170 public GitHub projects, documenting early growth, application domains, and decision-use patterns. `ling2026jevwilddatadrivenanalysis`
 
 ### Foundations and structured prediction
 
